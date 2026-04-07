@@ -94,7 +94,7 @@ public class sixProject : MonoBehaviour
         // 일반 공격(1회)일 때만 실시간 로그 표시
         if (!isSimulating)
         {
-            string tags = (isMiss ? "<color=gray>[실패]</color> " : "") +
+            string tags = (isMiss ? "[실패]</color> " : "") +
                           (isWeak ? "<color=yellow>[약점]</color> " : "") +
                           (isCrit ? "<color=red>[치명타!]</color> " : "");
             logDisplay.text = $"{tags}데미지: {finalDamage:F1}";
